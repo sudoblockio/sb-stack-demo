@@ -5,37 +5,39 @@ nav_order: 0
 ---
 
 # sb-stack-demo-docs
-> TODO
+
+sb-stack is a composable rust framework for building protocol specific clients with bindings into multiple languages like typescript and python. Built on top of [hyperium](https://github.com/hyperium) and composed with [tower](https://github.com/tower-rs), sb-stack binds rust's performance and memory safety to higher level languages benchmarking as the fastest typescript client (5x faster than axios & fetch) and on par with python's aiohttp.
+
 ## Documentation Index
 
 ### Transports
 
-- **[1.0 — Transport Layer Architecture](1.0-transports.md)**  
+- **[1.0 — Transport Layer Architecture](1.0-transports.md)**
   Generic abstraction powering all transports
 
-- **[1.1 — HTTP Transport](1.1-http-transport.md)**  
+- **[1.1 — HTTP Transport](1.1-http-transport.md)**
   HTTP/1.1 and HTTP/2 with connection pooling and middleware
 
-- **[1.2 — WebSocket Transport](1.2-ws-transport.md)**  
+- **[1.2 — WebSocket Transport](1.2-ws-transport.md)**
   Real-time bidirectional communication with pub/sub patterns
 
 ### Protocols
 
-- **[2.0 — Protocol Services](2.0-protocols.md)**  
+- **[2.0 — Protocol Services](2.0-protocols.md)**
   Overview of protocol-specific services
 
-- **[2.1 — JSON-RPC Service](2.1-jsonrpc.md)**  
+- **[2.1 — JSON-RPC Service](2.1-jsonrpc.md)**
   JSON-RPC 2.0 implementation with HTTP and WebSocket support
 
-- **[2.2 — gRPC Service](2.2-grpc.md)**  
+- **[2.2 — gRPC Service](2.2-grpc.md)**
   gRPC protocol implementation *(work in progress)*
 
 ### Clients
 
-- **[3.0 — Building Blockchain RPC Clients](3.0-chains.md)**  
+- **[3.0 — Building Blockchain RPC Clients](3.0-chains.md)**
   Guide to assembling transports and services into blockchain clients
 
-- **[3.1 — Ethereum Client](3.1-eth.md)**  
+- **[3.1 — Ethereum Client](3.1-eth.md)**
   Complete Ethereum JSON-RPC client with batch processing and subscriptions
 
 ## Quick Examples
