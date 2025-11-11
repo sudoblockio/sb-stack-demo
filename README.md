@@ -41,8 +41,8 @@ sb-stack is a composable rust framework for building protocol specific clients w
 **Rust**
 ```rust
 use sb_stack_transport_http::{
-  HttpTransport, 
-  Http1TransportConfig, 
+  HttpTransport,
+  Http1TransportConfig,
   HttpTransportRequestPacket
 };
 
@@ -87,7 +87,7 @@ async function example() {
 use sb_eth_jsonrpc_client::EthJsonrpcClient;
 
 async fn example() -> Result<(), Box<dyn std::error::Error>> {
-    let client = EthJsonrpcClient::new("https://eth-rpc-url-goes-here.com");
+    let client = EthJsonrpcClient::new("https://eth.rpc.sudoblock.io");
     client.connect().await?;
     let block = client.eth().get_block_by_number(12345.into(), true).await?;
     println!("Block: {}", block.number);
@@ -101,7 +101,7 @@ async fn example() -> Result<(), Box<dyn std::error::Error>> {
 from sb_eth_jsonrpc_client import EthJsonrpcClient
 
 async def example():
-    client = EthJsonrpcClient("https://eth-rpc-url-goes-here.com")
+    client = EthJsonrpcClient("https://eth.rpc.sudoblock.io")
     await client.connect()
     block = await client.eth().get_block_by_number(12345, True)
     print(f"Block: {block.number}")
@@ -113,7 +113,7 @@ async def example():
 import { EthJsonrpcClient } from 'sb-eth-jsonrpc-client';
 
 async function example() {
-    const client = new EthJsonrpcClient("https://eth-rpc-url-goes-here.com");
+    const client = new EthJsonrpcClient("https://eth.rpc.sudoblock.io");
     await client.connect();
     const block = await client.eth().getBlockByNumber(12345, true);
     console.log(`Block: ${block.number}`);
