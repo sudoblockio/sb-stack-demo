@@ -32,10 +32,10 @@ nav_order: 0
 
 ### Clients
 
-- **[4.0 — Building Blockchain RPC Clients](4.0-chains.md)**  
+- **[3.0 — Building Blockchain RPC Clients](3.0-chains.md)**  
   Guide to assembling transports and services into blockchain clients
 
-- **[4.1 — Ethereum Client](4.1-eth.md)**  
+- **[3.1 — Ethereum Client](3.1-eth.md)**  
   Complete Ethereum JSON-RPC client with batch processing and subscriptions
 
 ## Quick Examples
