@@ -23,9 +23,6 @@ Modern applications support SDKs in a number of different languages utilizing a 
 - **[2.1 — JSON-RPC Service](2.1-jsonrpc.md)**
   JSON-RPC 2.0 implementation with HTTP and WebSocket support
 
-- **[2.2 — gRPC Service](2.2-grpc.md)**
-  gRPC protocol implementation *(work in progress)*
-
 ### Clients
 
 - **[3.0 — Building Blockchain RPC Clients](3.0-chains.md)**
