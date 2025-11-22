@@ -1,4 +1,4 @@
-name: copy-sb-stack
+name: copy-sb-stack-demo
 description: Do not Edit... Generated with tackle.
 on:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
           ssh_key: ${{ secrets.SB_BOT_SSH_KEY }}
           access_token: ${{ secrets.SB_BOT_TOKEN }}
           sot_repo: sudoblockio/sb1
-          destination_repo: sudoblockio/sb-stack-demo-docs
+          destination_repo: sudoblockio/sb-stack-demo
           committer: sudoblockbot <info@sudoblock.io>
           push_include: stack/docs/demo/**
           pr_move: '||stack/docs/demo'
